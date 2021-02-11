@@ -15,3 +15,15 @@
 1. git管理ディレクトリ配下にて、以下のコマンドを実行する
    - `review <レビュー対象ブランチ名>`
       - 例)`review feature/add_review`
+
+## 簡易ログ表示用エイリアス
+### 概要
+- 以下の項目を1行で表示するエイリアス
+   - コミットのハッシュ値
+   - コミットの日付
+   - コメント
+   - ブランチ名/タグ名
+
+### 使い方
+1. `.zprofile`等に以下のエイリアスを設定する
+   - `alias git_log='git log --date=iso --pretty='format:%C(yellow)%H %C(green)%ad %C(reset)%s %C(red)%d'`
