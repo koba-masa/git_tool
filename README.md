@@ -27,3 +27,11 @@
 ### 使い方
 1. `.zprofile`等に以下のエイリアスを設定する
    - `alias git_log='git log --date=iso --pretty='format:%C(yellow)%H %C(green)%ad %C(reset)%s %C(red)%d'`
+
+## ブランチ名表示
+### 概要
+- プロンプトに現在のブランチ名を表示する
+
+### 使い方
+1. `.zprofile`等に以下のエイリアスを設定する
+   - `source <本プロジェクトを配置したディレクトリ>/git_tool/prompt/git_prompt.sh`
